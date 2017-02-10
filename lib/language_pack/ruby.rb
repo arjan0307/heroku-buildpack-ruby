@@ -696,6 +696,7 @@ end
 
 adapter = uri.scheme
 adapter = "postgresql" if adapter == "postgres"
+adapter = 'postgresql_makara'
 
 database = (uri.path || "").split("/")[1]
 
